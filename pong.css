@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+}
+.gamebox{
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    overflow: hidden;
+}
+#userscore,#aiscore{
+    color:white;
+    font-size:50px;
+    position:absolute;
+    top:12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#userscore{
+    left:40%;
+}
+#aiscore{
+    right:40%;
+}
+.dashedlinevertical{
+    border:2px dashed #ffffff7c;
+    position: absolute;
+    top:0;
+    left:50%;
+    width:0.2px;
+    height:100%;
+    transform: translateX(-50%);
+}
+#userpaddle{
+    width:20px;
+    background-color: white;
+    height:100px;
+    position:absolute;
+    left:5px;
+    border-radius: 10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+#aipaddle{
+    width:20px;
+    background-color: rgba(130, 7, 7, 0.902);
+    height:100px;
+    position:absolute;
+    right:5px;
+    border-radius: 10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+#ball{
+    background-color:rgb(24, 166, 218);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:20px;
+    height:20px;
+    border-radius:50%;
+}
